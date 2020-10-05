@@ -1,4 +1,11 @@
 
+provider "azurerm" {
+
+  version = "=2.28.0"
+  features {}
+
+}
+
 resource "random_integer" "sa_num" {
   min = 10000
   max = 99999
@@ -12,6 +19,5 @@ resource "azurerm_storage_account" "sa" {
   location                 = var.location
   account_tier             = var.account_tier
   account_replication_type = var.replication_type
-  tags = local.common_tags
 }
 

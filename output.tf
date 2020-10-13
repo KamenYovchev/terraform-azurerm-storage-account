@@ -18,3 +18,7 @@ output "storage_account_access_key" {
 output "storage_account_id" {
   value = azurerm_storage_account.sa.id
 }
+
+output "container_name" {
+  value = azurerm_storage_container.ct.name
+}

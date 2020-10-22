@@ -1,11 +1,4 @@
 
-provider "azurerm" {
-
-  version = "=2.28.0"
-  features {}
-
-}
-
 resource "random_integer" "sa_num" {
   min = 10000
   max = 99999
